@@ -1,26 +1,46 @@
 @use "../../variables" as v;
 
-@mixin fullName(){
-    .names{
-    //background-color: v.$white;  
-    display: flex;
-    justify-content: row;    
-    padding: 0.50rem 1.25rem;
-    align-items: center;
-    &__full_name{        
+@mixin typeDocument(){
+    .typeDocument{
+    //background-color: v.$white;
+      border-radius: 0.625rem;
+      font-family: v.$font-family;  
+      font-weight: bold;      
+      display: flex;
+      justify-content: row;
+      padding: 0.1rem 1.25rem;
+      align-items: center;
+      label{
+        color: v.$white;
+      }
+    }
+    .droplist{
         padding: 0.25rem 1.25rem;
         border-radius: 0.625rem;
         font-family: v.$font-family;
         width: 30vw;
         display: flex;
         flex-direction: column;
-        gap: 0.025rem;       
-        label{
-            color: v.$white;
+        gap: 0.025rem;         
+        select{
             font-family: v.$font-family;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 0.95rem; 
         }
+        option{
+            font-family: v.$font-family;
+            font-weight: bold;
+            font-size: 0.85rem; 
+        }
+    }
+    .numberDocument{
+        padding: 0.25rem 1.25rem;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.20rem;
+        width: 30vw;
+        gap: 0.025rem;
         input{
             border-bottom: 1px solid v.$gray;
             outline: none;
@@ -30,30 +50,6 @@
             font-weight: bold;
         }
     }
-    .lastName{
-        padding: 0.25rem 1.25rem;
-        border-radius: 0.625rem;
-        display: flex;
-        flex-direction: column;
-        margin-left: 0.20rem;
-        width: 30vw;
-        gap: 0.025rem;
-        label{
-            color: v.$white;
-            font-family: v.$font-family;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        input{
-            border-bottom: 1px solid v.$black;
-            outline: none;
-            padding: 0.2rem 0;
-            font-family: v.$font-family;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-        
-    }  
-   }  
-        
-} 
+    //
+
+}

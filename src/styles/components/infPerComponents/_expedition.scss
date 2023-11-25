@@ -1,0 +1,42 @@
+@use"../../variables" as v;
+
+@mixin expedition(){
+    .expedition{
+    //background-color: v.$white; 
+    border-radius: 0.625rem;
+    font-family: v.$font-family;
+    font-weight: bold;
+    display: flex;    
+    justify-content: row;
+    padding: 0.1rem 1.25rem;
+    label{
+        color: v.$white;
+      }
+    }
+    .date_expedition{
+        padding: 0.25rem 1.25rem;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.025rem;  
+    }
+    .place_expedition{
+        padding: 0.25rem 1.25rem;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.20rem;
+        width: 30vw;
+        gap: 0.025rem;
+        input{
+            border-bottom: 1px solid v.$gray;
+            outline: none;
+            padding: 0.2rem 0;
+            font-family: v.$font-family;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,6 +1,9 @@
 @use "label" as l;
 @use "../variables" as v;
 @use "./infPerComponents/_fullName" as fn;
+@use "./infPerComponents/typeDocument" as td;
+@use "../components/infPerComponents/expedition" as exp;
+@use "../components/infPerComponents/_birthdate" as bd;
 h2{
    font-family: v.$font-family;
    text-transform: uppercase;
@@ -11,13 +14,46 @@ h2{
 form{
     display:  grid;
     background-color: v.$white;
+    background-image: v.$main-bg;
+    border-radius: 8px;
+    width: 75%;
+    max-width: auto;
+    margin: 0 auto;
+    box-shadow: v.$main-shadow;
 
     fieldset{
-        border: none;
-        display: flex;
-        flex-direction: column;
-        padding: 0.1rem 0;
+    //background-color: v.$white;
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem 0;       
+    @include fn.fullName();
+    @include td.typeDocument();
+    @include exp.expedition();
+    @include bd.birthdate();
+    }
+    .button{
         
-        @include fn.fullName();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.001rem 0.025rem ;
+        input{
+            width: 15vw;
+            margin: 1rem;
+            background-color:#1ea1aa;
+            color: v.$white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: v.$font-family;
+            cursor: pointer;
+            &:hover{
+                background-color:v.$white;
+                color: #056d76;
+            }
+        }
     }
 }

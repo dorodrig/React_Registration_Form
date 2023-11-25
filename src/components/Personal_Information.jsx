@@ -11,27 +11,31 @@ const Personal_Information = () => {
                 <input type="text" id="full_name__fullName" />
                 <p className="error">Required</p>
               </div>
-              <div className="names__last_name"></div>
-              <label htmlFor="last_name">Last Name</label>
-              <input type="text" id="last_name" />
-              <p className="error">Required</p>
+              <div className="lastName">
+                <label htmlFor="last_name">Last Name</label>
+                <input type="text" id="last_name" />
+                <p className="error">Required</p>
+              </div>
             </div>
           </fieldset>
           <fieldset>
             <div className="typeDocument">
-              <label htmlFor="typeDocument">Type of Document</label>
-              <select name="typeDocument" id="typeDocument">
-                <option value="cc">C.C</option>
-                <option value="ce">C.E</option>
-                <option value="idcard">ID Card</option>
-                <option value="passport">Passport</option>
-                <option value="Immigration_permit">Immigration permit</option>
-              </select>
-            </div>
-            <div className="numberDocument">
-              <label htmlFor="numberDocument">Number of Document</label>
-              <input type="text" id="numberDocument" />
-              <p className="error">Required</p>
+              <div className="droplist">
+                <label htmlFor="typeDocument">Type of Document</label>
+                <select name="typeDocument" id="droplist__typeDocument">
+                  <option value="cc">C.C</option>
+                  <option value="ce">C.E</option>
+                  <option value="idcard">ID Card</option>
+                  <option value="passport">Passport</option>
+                  <option value="Immigration_permit">Immigration permit</option>
+                </select>
+                <p className="error">Required</p>
+              </div>
+              <div className="numberDocument">
+                <label htmlFor="numberDocument">Number of Document</label>
+                <input type="text" id="numberDocument" />
+                <p className="error">Required</p>
+              </div>
             </div>
           </fieldset>
           <fieldset>
@@ -64,6 +68,10 @@ const Personal_Information = () => {
               </div>
             </div>
           </fieldset>
+          <div className="button">
+            <input type="button" value="Back" />
+            <input type="button" value="Next" />
+          </div>
         </form>
       </div>
     </>

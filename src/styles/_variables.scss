@@ -2,8 +2,9 @@
 $font-family: 'DM Sans', sans-serif;
 // Colors
 $white: #fff;
-$gray: #202020;
+$gray: #000;
 $error: #0f5348;
+$black: #000;
 
 // Background
 $container-bg: linear-gradient(
@@ -22,7 +23,15 @@ $main-bg: linear-gradient(
   #06a5b3,
   #03e0f4
 );
-
+//background para botones del componente de personal information
+$button-bg: linear-gradient(
+  to right,
+  #1ea1aa, 
+  #0898ad, 
+  #0d8faf,
+  #2284ad,
+  #367aa9
+);
 // Shadows
 $main-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
   rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
