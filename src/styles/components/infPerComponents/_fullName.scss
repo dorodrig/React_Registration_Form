@@ -23,6 +23,7 @@
         }
         input{
             border-bottom: 1px solid v.$gray;
+            border-radius: 0.625rem;
             outline: none;
             padding: 0.2rem 0;
             font-family: v.$font-family;
@@ -45,6 +46,7 @@
             font-size: 1.2rem;
         }
         input{
+            border-radius: 0.625rem;
             border-bottom: 1px solid v.$black;
             outline: none;
             padding: 0.2rem 0;

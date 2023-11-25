@@ -40,6 +40,9 @@ form{
         align-items: center;
         margin: 0.001rem 0.025rem ;
         input{
+            text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-radius: 6rem;
             width: 15vw;
             margin: 1rem;
             background-color:#1ea1aa;

@@ -43,12 +43,13 @@ const SignUp = () => {
             </label>
             <p className="error error-terms">required</p>
           </fieldset>
-          <button type="submit">Register</button>
+          <button type="submit" onClick={() => setStep("personal")}>
+            Register
+          </button>
         </form>
       </div>
       <p>
-        Already have an account?{" "}
-        <span onClick={() => setStep("signin")}>Sign in</span>
+        Already have an account? <span>Sign in</span>
       </p>
     </main>
   );

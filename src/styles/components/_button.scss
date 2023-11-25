@@ -17,8 +17,8 @@
     cursor: pointer;
 
     &:hover {
-      background-image: v.$container-bg;
-      box-shadow: v.$main-shadow;
+      background-color:v.$white;
+      color: #056d76;
     }
   }
 }

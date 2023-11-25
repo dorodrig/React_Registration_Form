@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import AuthContext from "../context/AuthContext";
+
 const Personal_Information = () => {
+  let { setStep } = useContext(AuthContext);
   return (
     <>
       <div className="container__personal">
@@ -69,7 +73,11 @@ const Personal_Information = () => {
             </div>
           </fieldset>
           <div className="button">
-            <input type="button" value="Back" />
+            <input
+              type="button"
+              value="Back"
+              onClick={() => setStep("signup")}
+            />
             <input type="button" value="Next" />
           </div>
         </form>

@@ -4,7 +4,7 @@ import SignUp from "./components/SignUp";
 import Personal_Information from "./components/Personal_Information";
 
 function App() {
-  const [step, setStep] = useState("personal");
+  const [step, setStep] = useState("signup");
   return (
     <>
       <AuthContext.Provider value={{ step, setStep }}>
