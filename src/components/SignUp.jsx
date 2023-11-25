@@ -8,7 +8,7 @@ const SignUp = () => {
       <div className="card">
         <form autoComplete="off">
           <fieldset>
-            <label htmlFor="fullName">Full name</label>
+            <label htmlFor="fullName">User name</label>
             <input type="text" id="fullName" />
             <p className="error">Required</p>
           </fieldset>

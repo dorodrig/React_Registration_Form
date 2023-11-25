@@ -1,0 +1,23 @@
+@use "label" as l;
+@use "../variables" as v;
+@use "./infPerComponents/_fullName" as fn;
+h2{
+   font-family: v.$font-family;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 1.50rem;
+   color: v.$white
+}
+form{
+    display:  grid;
+    background-color: v.$white;
+
+    fieldset{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0.1rem 0;
+        
+        @include fn.fullName();
+    }
+}
