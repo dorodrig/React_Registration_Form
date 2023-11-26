@@ -1,6 +1,8 @@
-import Educational_Informations from "./Educational_Informations";
+import { useContext } from "react";
+import AuthContext from "../context/AuthContext";
 
 const Educational_Information = () => {
+  let { setStep } = useContext(AuthContext);
   return (
     <>
       <main>
@@ -28,7 +30,7 @@ const Educational_Information = () => {
             </div>
           </fieldset>
           <fieldset>
-            <div className="Education_container_status">
+            <div className="container-status">
               <div className="Study_level">
                 <label htmlFor="Study_level">Study level</label>
                 <select name="Study_level" id="droplist_Study_level">
@@ -43,8 +45,7 @@ const Educational_Information = () => {
                 </select>
                 <p className="error">Required</p>
               </div>
-
-              <div className="Education_container_status__status">
+              <div className="container-status__status">
                 <label htmlFor="status">Status</label>
                 <select name="droplist_status" id="droplist_status">
                   <option value="seleccion">Seleccione</option>
@@ -53,7 +54,7 @@ const Educational_Information = () => {
                   <option value="Egresado">Egresado</option>
                 </select>
               </div>
-              <div className="Education_container_status__finalized">
+              <div className="container-status__finalized">
                 <label htmlFor="finalized">Finalized</label>
                 <select name="finalizes__year" id="finalizes__year">
                   <option value="seleccione">seleccione </option>
@@ -61,18 +62,27 @@ const Educational_Information = () => {
                   <option value="2022">2022</option>
                   <option value="2021">2021</option>
                   <option value="2020">2020</option>
-                  <option value="otro"> Otro</option>
+                  {/* <option value="otro"> Otro</option> */}
                 </select>
-                <label htmlFor="finalized_otro">Please enter a year</label>
-                <input type="number" name="year__otro" id="year_otro" />
+                {/* <label htmlFor="finalized_otro">Please enter a year</label>
+                <input type="number" name="year__otro" id="year_otro" /> */}
               </div>
-              <label htmlFor="add">Add/-/</label>
-              <label htmlFor="">Delete</label>
+              {/* <label htmlFor="add">Add/-/</label>
+              <label htmlFor="">Delete</label> */}
             </div>
           </fieldset>
+          <div className="button">
+            <input
+              type="button"
+              value="Back"
+              onClick={() => setStep("personal")}
+            />
+            <input type="button" value="Next" />
+          </div>
         </form>
       </main>
-      <Educational_Informations />
+
+      {/* <Educational_Informations /> */}
     </>
   );
 };

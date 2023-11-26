@@ -1,0 +1,19 @@
+@use "../../variables" as v;
+@use "../InforEducation/status" as s;
+
+@mixin EducationalStatus(){
+    .container-status{
+        //background-color: rgb(157, 255, 0);
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        font-weight: bold;
+        display: flex;    
+        justify-content: row;
+        padding: 0.65rem 0.50rem; 
+        label{
+            color: v.$white;
+        }
+        @include s.status();
+    } 
+    
+}

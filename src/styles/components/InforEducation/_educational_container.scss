@@ -1,0 +1,20 @@
+@use"../../variables"as v;
+@use "../InforEducation/title-country-institution" as tci;
+
+
+@mixin Educationalcont(){
+   .educational_container{
+    //background-color: rgb(157, 255, 0);
+    border-radius: 0.625rem;
+    font-family: v.$font-family;
+    font-weight: bold;
+    display: flex;    
+    justify-content: row;
+    padding: 0.1rem 1.25rem; 
+    label{
+        color: v.$white;
+    }
+    @include tci.title_country_instituion();
+   }
+}
+    

@@ -5,7 +5,7 @@ import Personal_Information from "./components/Personal_Information";
 import Educational_Information from "./components/Educational_Information";
 
 function App() {
-  const [step, setStep] = useState("educational");
+  const [step, setStep] = useState("signup");
   return (
     <>
       <AuthContext.Provider value={{ step, setStep }}>

@@ -78,7 +78,11 @@ const Personal_Information = () => {
               value="Back"
               onClick={() => setStep("signup")}
             />
-            <input type="button" value="Next" />
+            <input
+              type="button"
+              value="Next"
+              onClick={() => setStep("educational")}
+            />
           </div>
         </form>
       </div>

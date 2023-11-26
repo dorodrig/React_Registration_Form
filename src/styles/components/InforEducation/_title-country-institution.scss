@@ -1,0 +1,43 @@
+@use "../../variables" as v;
+@mixin title_country_instituion (){
+    .educational_container{    
+        &__title{                
+            padding: 0.25rem 0.10rem;
+            border-radius: 0.625rem;
+            font-family: v.$font-family;
+            width: 16vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.025rem;
+            input{
+                font-weight: bold;
+            }         
+        }
+        &__country{
+            padding: 0.25rem 1.05rem;
+            border-radius: 0.625rem;
+            font-family: v.$font-family;
+            width: 12vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.025rem;  
+            select{
+                font-weight: bold;
+            }   
+        }
+        &__institution{
+            padding: 0.25rem 0.10rem;
+            border-radius: 0.625rem;
+            font-family: v.$font-family;
+            width: 17vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.025rem; 
+            input{
+                font-weight: bold;
+            }   
+        }
+       }
+}
+
+   

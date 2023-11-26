@@ -25,7 +25,7 @@ const Educational_Informations = () => {
           </div>
         </fieldset>
         <fieldset>
-          <div className="Education_container_status">
+          <div className="container-status">
             <div className="Study_level">
               <label htmlFor="Study_level">Study level</label>
               <select name="Study_level" id="droplist_Study_level">
@@ -40,8 +40,7 @@ const Educational_Informations = () => {
               </select>
               <p className="error">Required</p>
             </div>
-
-            <div className="Education_container_status__status">
+            <div className="container-status__status">
               <label htmlFor="status">Status</label>
               <select name="droplist_status" id="droplist_status">
                 <option value="seleccion">Seleccione</option>
@@ -50,7 +49,7 @@ const Educational_Informations = () => {
                 <option value="Egresado">Egresado</option>
               </select>
             </div>
-            <div className="Education_container_status__finalized">
+            <div className="container-status__finalized">
               <label htmlFor="finalized">Finalized</label>
               <select name="finalizes__year" id="finalizes__year">
                 <option value="seleccione">seleccione </option>
@@ -58,13 +57,8 @@ const Educational_Informations = () => {
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
-                <option value="otro"> Otro</option>
               </select>
-              <label htmlFor="finalized_otro">Please enter a year</label>
-              <input type="number" name="year__otro" id="year_otro" />
             </div>
-            <label htmlFor="add">Add/-/</label>
-            <label htmlFor="">Delete</label>
           </div>
         </fieldset>
       </form>

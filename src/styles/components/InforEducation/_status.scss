@@ -1,0 +1,43 @@
+@use "../../variables" as v;
+@mixin status(){
+    .Study_level{
+        //background-color: red;
+        padding: 0.25rem 0.10rem;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        width: 16vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.025rem;
+        select{
+            font-weight: bold;
+        } 
+    }
+    &__status{
+        //background-color: salmon;
+        padding: 0.25rem 0.10rem;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        width: 16vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.025rem;
+        select{
+            font-weight: bold;
+        } 
+    }
+    &__finalized{
+        //background-color: rgb(255, 0, 200);
+        padding: 0.25rem 0.10rem;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        width: 16vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.025rem;
+        select{
+            font-weight: bold;
+        } 
+    }
+
+}
