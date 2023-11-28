@@ -14,4 +14,15 @@
       text-align: left;
     }
   }
+  .error-message {
+    color: v.$error;
+    font-family: v.$font-family;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-top: 0.3rem;
+
+    &-terms {
+      text-align: left;
+    }
+  }
 }
