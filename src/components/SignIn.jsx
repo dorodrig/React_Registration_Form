@@ -13,9 +13,10 @@ const SignIn = () => {
 
   const handlerSubmit = (e) => {
     // Evita el envío de datos a un backend
-    e.preventDefault();
-    console.log("Sending data to backend...");
-    console.log(`El usuario digitó: ${email} y ${password}`);
+    e.preventDefault(setStep("personal"));
+    // console.log("Sending data to backend...");
+    // console.log(`El usuario digitó: ${email} y ${password}`);
+    //setStep("personal");
   };
 
   return (
@@ -51,9 +52,7 @@ const SignIn = () => {
             />
             <p className="error">Valid password required</p>
           </fieldset>
-          <button type="submit" onClick={() => setStep("personal")}>
-            login
-          </button>
+          <button type="submit">login</button>
           {/* <div className="forgot" onClick={() => setStep("forgot")}>
             Forgot password?
           </div> */}
