@@ -10,10 +10,11 @@
     font-weight: bold;
     display: flex;    
     justify-content: row;
-    padding: 0.1rem 1.25rem; 
+    padding: 0.1rem 1rem; 
     label{
         color: v.$white;
     }
+    
     @include tci.title_country_instituion();
    }
 }
