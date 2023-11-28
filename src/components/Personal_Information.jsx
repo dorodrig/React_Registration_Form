@@ -76,7 +76,7 @@ const Personal_Information = () => {
             <input
               type="button"
               value="Back"
-              onClick={() => setStep("signup")}
+              onClick={() => setStep("signin")}
             />
             <input
               type="button"

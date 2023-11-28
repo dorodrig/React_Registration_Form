@@ -5,6 +5,7 @@
   input[type="email"],
   input[type="password"],
   select {
+    width: 30vw;
     font-family: v.$font-family;
     font-size: 1rem;
     border: 0;
@@ -12,6 +13,7 @@
     outline: none;
     padding: 0.2rem 0;
     color: v.$gray;
+    font-weight: bold;
   }
   input[type="checkbox"] {
     margin-right: 8px;
