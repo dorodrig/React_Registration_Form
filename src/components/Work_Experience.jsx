@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import AuthContext from "../context/AuthContext";
+
 const Work_Experience = () => {
+  let { setStep } = useContext(AuthContext);
   return (
-    <main>
-      <h2>Work Experince</h2>
+    <>
       <form autoComplete="off">
+        <h2>Work Experince</h2>
         <fieldset>
           <div className="work_container">
             <div className="work_container__title">
@@ -66,8 +70,20 @@ const Work_Experience = () => {
             </div>
           </div>
         </fieldset>
+        <div className="button">
+          <input
+            type="button"
+            value="Back"
+            onClick={() => setStep("educational")}
+          />
+          <input
+            type="button"
+            value="Summary"
+            onClick={() => setStep("summary")}
+          />
+        </div>
       </form>
-    </main>
+    </>
   );
 };
 

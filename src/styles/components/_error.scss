@@ -17,12 +17,14 @@
   .error-message {
     color: v.$error;
     font-family: v.$font-family;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: right;
     margin-top: 0.3rem;
 
     &-terms {
+      color: v.$error;
       text-align: left;
+      font-weight: bold;
     }
   }
 }

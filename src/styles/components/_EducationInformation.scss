@@ -3,6 +3,7 @@
 @use "../components/InforEducation/educational_status" as es;
 
 form{
+   // background-color: red;
     display:  grid;
     background-color: v.$white;
     background-image: v.$main-bg;
