@@ -1,0 +1,46 @@
+@use "../../variables" as v;
+@mixin title-contry-institution(){
+    .work_container{
+        &__title{
+            padding: 0.25rem 0.10rem;
+            border-radius: 0.625rem;
+            font-family: v.$font-family;
+            width: 16vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.025rem;
+            input{
+                font-weight: bold;
+                width: 15vw;
+            }  
+        }
+        &__country{
+            padding: 0.25rem 0.2rem;
+            border-radius: 0.625rem;
+            font-family: v.$font-family;
+            width: 12vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.025rem;  
+            select{
+                width: 12vw;
+                font-weight: bold;
+            }   
+        }
+        &__institution{
+            padding: 0.25rem 0.40rem;
+            border-radius: 0.625rem;
+            font-family: v.$font-family;
+            width: 16vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.025rem;
+            input{
+                font-weight: bold;
+                width: 12vw;
+            }  
+        }
+
+    }
+   
+}

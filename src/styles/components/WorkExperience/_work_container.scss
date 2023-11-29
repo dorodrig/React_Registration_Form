@@ -1,0 +1,17 @@
+@use "../../variables" as v;
+@use"../WorkExperience/title-country-institution" as tci;
+@mixin work_container(){
+    .work_container{
+        //background-color: yellow;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        font-weight: bold;
+        display: flex;    
+        justify-content: row;
+        padding: 0.1rem 1rem; 
+        label{
+            color: v.$white;
+        }
+        @include tci.title-contry-institution();
+    }
+}

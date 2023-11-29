@@ -1,0 +1,37 @@
+@use "../../variables" as v;
+@mixin datework(){
+    .datework{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        font-weight: bold;        
+        padding: 0.1rem 1rem;
+        
+        label{
+        color: v.$white;       
+    }
+    .start{
+        //background-color: rgb(151, 205, 50);  
+        padding: 0.25rem 2rem;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        width: 16vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.025rem;
+    }
+    .end{
+        //background-color: yellow;
+        padding: 0.25rem 2rem;
+        border-radius: 0.625rem;
+        font-family: v.$font-family;
+        width: 16vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.025rem;
+    }
+
+    }
+}

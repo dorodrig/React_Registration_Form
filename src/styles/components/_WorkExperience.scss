@@ -1,0 +1,53 @@
+@use "../variables" as v;
+@use "../components/WorkExperience/work_container" as wc;
+@use "../components/WorkExperience/work-container-status" as wcs;
+@use "../components/WorkExperience/datework" as dw;
+form{
+   
+    display:  grid;
+    background-color: v.$white;
+    background-image: v.$main-bg;
+    border-radius: 8px;
+    width: 75%;
+    max-width: auto;
+    margin: 0 auto;
+    box-shadow: v.$main-shadow;
+
+    fieldset{    
+    background-color: v.$main-bg;
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem 0;       
+    @include wc.work_container();
+    @include wcs.work_container-status();
+    @include dw.datework();
+    }
+    // .button{
+        
+    //      display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     margin: 0.001rem 0.025rem ;
+    //     input{
+    //         text-transform: uppercase;
+    // letter-spacing: 0.1rem;
+    // border-radius: 6rem;
+    //         width: 15vw;
+    //         margin: 1rem;
+    //         background-color:#1ea1aa;
+    //         color: v.$white;
+    //         border: none;
+    //         padding: 0.5rem 1rem;
+    //         border-radius: 0.5rem;
+    //         font-size: 1rem;
+    //         font-family: v.$font-family;
+    //         cursor: pointer;
+    //         &:hover{
+    //             background-color:v.$white;
+    //             color: #056d76;
+    //         }
+    //     }
+    // }
+}
